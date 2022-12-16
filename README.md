@@ -1,4 +1,15 @@
 # SimpleRenderWrapper
-A simple RenderWindow wrapper ui library for Synapse X 3.0.
 
-Still need to add more methods and properly add typing. Probably will even add custom assertions.
+A simple RenderWindow wrapper UI library for Synapse X 3.0. Made to be a simple UI library for testing or small projects.
+
+## TODO
+
+ - [ ] More components.
+ - [ ] More Luau typing.
+ - [ ] Documentation comments.
+ - [ ] Custom assertions.
+ - [ ] Theming?
+ 
+ ## Preview
+ 
+ ![image](https://user-images.githubusercontent.com/56797207/208209387-69e12adc-a396-41b3-9650-9b45e6ee1978.png)
