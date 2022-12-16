@@ -8,6 +8,7 @@ A simple RenderWindow wrapper UI library for Synapse X 3.0. Made to be a simple 
  - [ ] More Luau typing.
  - [ ] Documentation comments.
  - [ ] Custom assertions.
+ - [ ] Implementation examples.
  - [ ] Theming?
  
  ## Preview
