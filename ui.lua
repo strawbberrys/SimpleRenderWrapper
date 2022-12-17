@@ -72,17 +72,21 @@ do
         return intSlider
     end
 
-    function Page:addDropdown(name: string, items: {string}, callback: (newSelection: any) -> ()): RenderCombo
+    function Page:addDropdown(name: string, items: {string}, callback: (newSelection: any) -> ()?): (RenderCombo, RenderButton?)
         local sameLine = self.page:SameLine()
         local combo = sameLine:Combo()
-        local button = sameLine:Button()
+        local button = nil
 
         combo.Items = items
 
-        button.Label = name
-        button.OnUpdated:Connect(function()
-            callback(combo.Items[combo.SelectedItem])
-        end)
+        if callback then
+            button = sameLine:Button()
+
+            button.Label = name
+            button.OnUpdated:Connect(function()
+                callback(combo.Items[combo.SelectedItem])
+            end)
+        end
 
         return combo, button
     end
