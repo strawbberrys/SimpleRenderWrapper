@@ -86,6 +86,8 @@ do
             button.OnUpdated:Connect(function()
                 callback(combo.Items[combo.SelectedItem])
             end)
+        else
+            combo.Label = name
         end
 
         return combo, button
