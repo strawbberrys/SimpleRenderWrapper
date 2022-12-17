@@ -80,7 +80,9 @@ do
         combo.Items = items
 
         button.Label = name
-        button.OnUpdated:Connect(callback)
+        button.OnUpdated:Connect(function()
+            callback(combo.Items[combo.SelectedItem])
+        end)
 
         return combo, button
     end
