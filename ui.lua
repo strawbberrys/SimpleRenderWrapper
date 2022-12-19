@@ -117,6 +117,12 @@ do
             return textBox, button
         end
 
+        function Page:addCollapsable(name: string, open: boolean?)
+            local collapsable = self.page:Collapsable(name, open)
+
+            return setmetatable({page = collapsable}, Page)
+        end
+
         function Page:addSameLine()
             local sameLine = self.page:SameLine()
 
