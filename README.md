@@ -8,9 +8,13 @@ A simple RenderWindow wrapper UI library for Synapse X 3.0. Made to be a simple 
  - [ ] More Luau typing.
  - [ ] Documentation comments.
  - [ ] Custom assertions.
- - [ ] Implementation examples.
+ - [x] Implementation examples.
  - [ ] Theming?
  
- ## Preview
+## Preview
  
- ![image](https://user-images.githubusercontent.com/56797207/208209387-69e12adc-a396-41b3-9650-9b45e6ee1978.png)
+![image](https://user-images.githubusercontent.com/56797207/208209387-69e12adc-a396-41b3-9650-9b45e6ee1978.png)
+
+## Examples
+
+You can view examples in the [examples folder](https://github.com/strawbberrys/SimpleRenderWrapper/tree/main/examples).
