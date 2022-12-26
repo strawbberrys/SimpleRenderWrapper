@@ -74,6 +74,8 @@ do
             intSlider.Min = min
             intSlider.Max = max
 
+            intSlider.OnUpdated:Connect(callback)
+
             return intSlider
         end
 
